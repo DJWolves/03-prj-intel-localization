@@ -286,6 +286,7 @@
     }
 
     .colm {
+        margin: 20px;
         display: inline-block;
         width: 32%;
         vertical-align: top;
