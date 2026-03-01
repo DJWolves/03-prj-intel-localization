@@ -1,0 +1,278 @@
+/* Add your CSS here */
+
+
+/*
+
+.navbar img {
+    height: 28px;
+    width: auto;
+    float: left; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar {
+    background-color: #0071c5;
+    overflow: hidden;
+} 
+.navbar a {
+    float: left;
+    display: block;
+    color: #080808;
+    padding: 14px 16px; 
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: #52bbf0;
+    color: black;
+}
+.navbar a.active {
+    background-color: #04AA6D;
+    color: rgb(255, 255, 255);
+}
+*/
+
+@media (max-width: 991px) {
+    /* Basic styles for mobile */
+    body {
+        font-family: neo sans, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #080808;
+        text-align: center;
+    }
+
+    /* Navbar styles for mobile */
+    .navbar {
+        background-color: #0071c5;
+        overflow: hidden;
+        position: relative; /* Needed for positioning */
+        text-align: center;
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Vertically center items */
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center the logo */
+    }
+
+    /* Hide the checkboxes */
+    #logo-toggle,
+    #menu-toggle {
+        display: none;
+    }
+
+    /* Style the logo label wrapper */
+    .logo-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer; /* Shows it's clickable */
+        flex-basis: 100%; /* Put logo on its own line */
+    }
+
+    /* Style the logo */
+    #logo {
+        height: 28px;
+        width: auto;
+        padding: 10px;
+    }
+
+    /* Hide the "Years" dropdown label until logo is clicked */
+    .dropdown-label {
+        display: none;
+        color: #080808;
+        padding: 14px 16px;
+        font-size: 17px;
+        cursor: pointer; /* Shows it's clickable */
+        background-color: #0071c5;
+        width: 100%; /* Center the label on its own line */
+        text-align: center;
+    }
+
+    /* Show "Years" label when logo is clicked */
+    #logo-toggle:checked ~ .dropdown-label {
+        display: block;
+    }
+
+    .dropdown-label:hover {
+        background-color: #52bbf0; /* Change color on hover */
+    }
+
+    /* Hide nav links by default on small screens */
+    .nav-links {
+        display: none; /* Hidden by default */
+        background-color: #0071c5;
+        width: 100%; /* Full width so links stack below */
+        flex-basis: 100%; /* Take full row */
+        text-align: center; /* Center the links */
+    }
+
+    /* Show nav links when checkbox is checked */
+    #menu-toggle:checked ~ .nav-links {
+        display: block; /* Show the links */
+    }
+
+    /* Style the individual links as a vertical list */
+    .nav-links a {
+        display: block; /* Stack links vertically */
+        color: #080808;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        text-align: center; /* Center the text */
+    }
+
+    .nav-links a:hover {
+        background-color: #52bbf0;
+        color: black;
+    }
+
+    .img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin: 20px;
+    }
+
+    .year {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        border-style: solid;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* Carousel style for larger screens */
+@media (min-width: 992px) {
+    /* Basic styles */
+    body {
+        font-family: neo sans, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #080808;
+        text-align: center;
+    }
+
+    /* Navbar styles - same as mobile */
+    .navbar {
+        background-color: #0071c5;
+        overflow: hidden;
+        position: relative; /* Needed for positioning */
+        text-align: center;
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Vertically center items */
+        flex-wrap: wrap; /* Allow items to wrap */
+    }
+
+    /* Hide the checkboxes */
+    #logo-toggle,
+    #menu-toggle {
+        display: none;
+    }
+
+    /* Hide the logo label wrapper on larger screens (logo not clickable) */
+    .logo-label {
+        display: block;
+    }
+
+    /* Style the logo */
+    #logo {
+        height: 28px;
+        width: auto;
+        padding: 10px;
+        margin-right: 10px; /* Space between logo and dropdown */
+    }
+
+    /* Style the dropdown label that says "Years" */
+    .dropdown-label {
+        color: #080808;
+        padding: 14px 16px;
+        font-size: 17px;
+        cursor: pointer; /* Shows it's clickable */
+        background-color: #0071c5;
+    }
+
+    .dropdown-label:hover {
+        background-color: #52bbf0; /* Change color on hover */
+    }
+
+    /* Hide nav links by default */
+    .nav-links {
+        display: none; /* Hidden by default */
+        background-color: #0071c5;
+        width: 100%; /* Full width so links stack below */
+        flex-basis: 100%; /* Take full row */
+        text-align: center; /* Center the links */
+    }
+
+    /* Show nav links when checkbox is checked */
+    #menu-toggle:checked ~ .nav-links {
+        display: block; /* Show the links */
+    }
+
+    /* Style the individual links as a vertical list */
+    .nav-links a {
+        display: block; /* Stack links vertically */
+        color: #080808;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        text-align: center; /* Center the text */
+    }
+
+    .nav-links a:hover {
+        background-color: #52bbf0;
+        color: black;
+    }
+
+    .img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin: 20px;
+    }
+
+    /* Make the section a horizontal scrolling container */
+    section {
+        display: flex; /* Display items in a row */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Snap to each card when scrolling */
+        gap: 20px; /* Space between cards */
+        padding: 20px 0; /* Add some padding top and bottom */
+    }
+    
+    /* Style each year card in the carousel */
+    .year {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        border-style: solid;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+        flex: 0 0 300px; /* Fixed width for each card, don't grow or shrink */
+        scroll-snap-align: center; /* Snap each card to center when scrolling */
+    }
+    
+    /* Hide paragraph text by default */
+    .year p {
+        display: none;
+    }
+    
+    /* Show paragraph when hovering over the card */
+    .year:hover p {
+        display: block;
+    }
+}
