@@ -8,10 +8,43 @@
 </head>
 <body>
 
+
+    <div class="navbar">
+      <!-- Hidden checkbox for logo toggle (small screens) -->
+      <input type="checkbox" id="logo-toggle" />
+
+      <!-- Clickable logo for small screens -->
+      <label for="logo-toggle" class="logo-label">
+        <img src="img/intel-header-logo.svg" alt="Intel Logo" id="logo" />
+      </label>
+
+      <!-- Hidden checkbox for dropdown toggle -->
+      <input type="checkbox" id="menu-toggle" />
+      
+      <!-- Dropdown label that says "Years" -->
+      <label for="menu-toggle" class="dropdown-label">Years</label>
+      
+      <!-- Nav links wrapper -->
+      <div class="nav-links">
+        <a href="#yr-1968">1968</a>
+        <a href="#yr-1971">1971</a>
+        <a href="#yr-1978">1978</a>
+        <a href="#yr-1985">1985</a>
+        <a href="#yr-2006">2006</a>
+        <a href="#yr-2020">2020</a>
+        <a href="#yr-2022">2022</a>
+        <a href="#yr-2023">2023</a>
+        <a href="#yr-2024">2024</a>
+      </div>
+  </div>
+
+<div class="main">
+
   <!-- Header / Hero Section -->
   <header>
     <div>
-      <img src="img/intel-header-logo.svg" alt="Intel Logo" />
+      <!-- Ask Copilot to teach you about `.svg`. 🙂 You'll need to resize the logo with CSS. -->
+      
       <!-- Main Heading -->
       <h1>
         Sustainability Through the Ages
@@ -26,13 +59,16 @@
     </div>
   </header>
 
+
   <!-- Timeline Cards Section -->
   <section>
+
     <!-- Card 1: 1968 -->
-    <div>
+    <div id="yr-1968" class="year">
       <h2>1968</h2>
       <h3>Intel Founded</h3>
-      <img src="img/1.jpg" alt="Placeholder Image" />
+      <!-- Add image -->
+       <img src="img/1.jpg" alt="1968" class="img" />
       <p>
         Robert Noyce and Gordon Moore rename the newly formed company 
         NM Electronics to Intel Corporation, laying the foundation for 
@@ -41,10 +77,11 @@
     </div>
 
     <!-- Card 2: 1971 -->
-    <div>
+    <div id="yr-1971" class="year">
       <h2>1971</h2>
       <h3>First Microprocessor</h3>
-      <img src="img/2.jpg" alt="Placeholder Image" />
+      <!-- Add image -->
+      <img src="img/2.jpg" alt="1971" class="img" />
       <p>
         Intel debuts the 4004, the world's first commercial microprocessor, 
         igniting the microprocessor revolution and propelling the future 
@@ -53,10 +90,11 @@
     </div>
 
     <!-- Card 3: 1978 -->
-    <div>
+    <div id="yr-1978" class="year">
       <h2>1978</h2>
       <h3>8086 Processor</h3>
-      <img src="img/3.jpg" alt="Placeholder Image" />
+      <!-- Add image -->
+        <img src="img/3.jpg" alt="1978" class="img"/>
       <p>
         Launch of the 8086 processor, establishing the x86 architecture 
         that drives countless PCs and servers in the modern era.
@@ -64,10 +102,11 @@
     </div>
 
     <!-- Card 4: 1985 -->
-    <div>
+    <div id="yr-1985" class="year">
       <h2>1985</h2>
       <h3>386 Processor</h3>
-      <img src="img/4.jpg" alt="Placeholder Image" />
+      <!-- Add image -->
+        <img src="img/4.jpg" alt="1985" class="img" />
       <p>
         Intel introduces the 386 processor with 32-bit architecture, 
         ushering in a new era of performance and multitasking for 
@@ -76,10 +115,11 @@
     </div>
 
     <!-- Card 5: 2006 -->
-    <div>
+    <div id="yr-2006" class="year">
       <h2>2006</h2>
       <h3>Peak GHG Emissions</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
+      <!-- Add image -->
+        <img src="img/intel 2006 img.jpg" alt="2006" class="img" id="ghg"/>
       <p>
         This year marks Intel's highest annual greenhouse gas emissions 
         for operations. Over subsequent years, Intel invests heavily in 
@@ -89,10 +129,11 @@
     </div>
 
     <!-- Card 6: 2020 -->
-    <div>
+    <div id="yr-2020" class="year">
       <h2>2020</h2>
       <h3>RISE Strategy</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
+      <!-- Add image -->
+       <img src="img/2020 rise.jpg" alt="2020" class="img" id="rise-2020"/>
       <p>
         Intel launches its RISE (Responsible, Inclusive, Sustainable, 
         Enabling) strategy and 2030 goals, aiming to drive industry-wide 
@@ -101,10 +142,10 @@
     </div>
 
     <!-- Card 7: 2022 -->
-    <div>
+    <div id="yr-2022" class="year">
       <h2>2022</h2>
       <h3>Net-Zero By 2040</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
+      <!-- Add image -->
       <p>
         Intel announces its commitment to achieve net-zero greenhouse 
         gas emissions (Scope 1 and 2) across its global operations 
@@ -113,10 +154,10 @@
     </div>
 
     <!-- Card 8: 2023 -->
-    <div>
+    <div id="yr-2023" class="year">
       <h2>2023</h2>
       <h3>Renewable Electricity</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
+      <!-- Add image -->
       <p>
         The company achieves 99% renewable electricity usage worldwide, 
         helping to drastically lower carbon emissions and driving progress 
@@ -125,10 +166,10 @@
     </div>
 
     <!-- Card 9: 2024 -->
-    <div>
+    <div id="yr-2024" class="year">
       <h2>2024</h2>
       <h3>Sustainability Summit</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
+      <!-- Add image -->
       <p>
         Intel hosts its first Sustainability Summit, uniting suppliers, 
         government officials, and industry leaders to collaborate on 
@@ -136,13 +177,17 @@
       </p>
     </div>
   </section>
+ </div> 
+  <p>Scroll to view timeline | Hover over cards to learn more!</p>
 
-  <!-- 3-Column Content Section -->
+
+
+   <!-- 3-Column Content Section -->
   <section>
     <div>
       
       <!-- Column 1 -->
-      <div>
+      <div id="colm-rise" class="colm">
         <h2>RISE Strategy</h2>
         <p>
           Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy, 
@@ -154,7 +199,7 @@
       </div>
 
       <!-- Column 2 -->
-      <div>
+      <div id="colm-commitment" class="colm">
         <h2>Commitment</h2>
         <p>
           In 2022, Intel pledged to achieve net-zero greenhouse gas emissions 
@@ -167,7 +212,7 @@
       </div>
 
       <!-- Column 3 -->
-      <div>
+      <div id="colm-water-waste" class="colm">
         <h2>Water &amp; Waste</h2>
         <p>
           Intel conserves billions of gallons of water annually and 
@@ -187,5 +232,20 @@
     <h2>Subscribe to our Newsletter</h2>
     <!-- Add form here -->
   </section>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
