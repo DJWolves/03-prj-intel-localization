@@ -162,7 +162,7 @@
       .row {
           display: flex;
           flex-direction: column; /* Stack columns vertically on mobile */
-          margin: 0 10px; /* Adjust for padding */
+          margin: 0 15px; /* Adjust for padding */
       }
 }
 
