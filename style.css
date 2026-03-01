@@ -293,4 +293,9 @@
         width: 32%;
         vertical-align: top;
     }
+
+    .row {
+        display: flex;
+        margin: 0 -10px; /* Adjust for padding */
+    }
 }
