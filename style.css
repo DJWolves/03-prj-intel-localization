@@ -151,8 +151,8 @@
     }
 
       .colm {
-        padding-right: 5px;
-          padding: 10px;
+        
+          padding: 15px;
           margin: 0px;
           display: inline-flex;
           flex-direction: column;
@@ -163,7 +163,7 @@
       .row {
           display: flex;
           flex-direction: column; /* Stack columns vertically on mobile */
-          margin: 0 15px; /* Adjust for padding */
+          margin: 0 25px; /* Adjust for padding */
       }
 }
 
