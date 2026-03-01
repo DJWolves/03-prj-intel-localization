@@ -151,6 +151,15 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
 /* Carousel style for larger screens */
 @media (min-width: 992px) {
     /* Basic styles */
@@ -274,5 +283,11 @@
     /* Show paragraph when hovering over the card */
     .year:hover p {
         display: block;
+    }
+
+    .colm {
+        display: inline-block;
+        width: 32%;
+        vertical-align: top;
     }
 }
