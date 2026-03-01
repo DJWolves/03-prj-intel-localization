@@ -270,6 +270,9 @@
         padding: 0;
         color: #080808;
         text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
 
     /* Navbar styles - same as mobile */
