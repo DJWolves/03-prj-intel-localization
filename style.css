@@ -289,7 +289,7 @@
         padding: 10px;
         margin: 0px;
         display: inline-flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 32%;
         vertical-align: top;
     }
