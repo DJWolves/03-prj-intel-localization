@@ -1,5 +1,55 @@
 /* Add your CSS here */
 
+#subscription-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#subscription-form input[type="email"] {
+    width: min(320px, 90vw);
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #0071c5;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #080808;
+}
+
+#subscription-form input[type="email"]::placeholder {
+    color: #6b7280;
+}
+
+#subscription-form input[type="email"]:focus-visible {
+    outline: 2px solid #52bbf0;
+    outline-offset: 2px;
+}
+
+#subscription-form button {
+    background-color: #0071c5;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#subscription-form button:hover {
+    background-color: #52bbf0;
+    color: #080808;
+    transform: translateY(-1px);
+}
+
+#subscription-form button:focus-visible {
+    outline: 2px solid #0071c5;
+    outline-offset: 2px;
+}
+
 
 /*
 
@@ -165,6 +215,15 @@
           flex-direction: column; /* Stack columns vertically on mobile */
           margin: 0 25px; /* Adjust for padding */
       }
+
+    .subscrip {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    #subscription-form {
+        flex-direction: column;
+    }
 }
 
 
@@ -313,5 +372,11 @@
     .row {
         display: flex;
         margin: 0 10px; /* Adjust for padding */
+    }
+
+    .subscrip {
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
     }
 }
